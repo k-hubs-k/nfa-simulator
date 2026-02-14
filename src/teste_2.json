@@ -1,0 +1,21 @@
+{
+  "start_state": "S",
+  "accept_states": ["C"],
+  "description": "Hello world",
+  "transitions": {
+    "S": {
+      "0": ["S"],
+      "1": ["S", "A"]
+    },
+    "A": {
+      "1": ["B"]
+    },
+    "B": {
+      "*": ["C"]
+    },
+    "C": {
+      "0": ["C"],
+      "1": ["C"]
+    }
+  }
+}
